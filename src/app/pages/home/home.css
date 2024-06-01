@@ -90,7 +90,7 @@ section{
 .header{
     height: 100vh;
     padding-top: 0px;
-    background-color: #F56477;
+    background-color: #C7F6F6;
 }
 
 .image {
@@ -234,7 +234,7 @@ mat-drawer {
 }
 
 .div-header{
-    background-color: #F56477;
+    background-color: #C7F6F6;
     overflow-x: hidden;
     position:relative;
     display: flex;
