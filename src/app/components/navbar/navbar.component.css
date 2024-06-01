@@ -79,6 +79,7 @@ button[mat-button]:hover {
     }
     
     .logo{
+        font-size: 30px;
         margin-left: 0;
     }
     
@@ -89,6 +90,7 @@ button[mat-button]:hover {
 
     nav {
         height: auto;
+        align-content: center;
         padding: 0px;
         padding-block: 10px;
         min-height: 50px;

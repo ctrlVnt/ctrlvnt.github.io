@@ -36,7 +36,7 @@ h1{
     font-family: "Libre Baskerville", serif;
     font-size: 90px;
     margin-bottom: 60px;
-    line-height: 90%;
+    line-height: 120%;
     color: #fff;
     text-align: center;
     padding-inline: 20px;
@@ -484,10 +484,6 @@ app-contactform{
     .about-me-button{
         margin-top: 5%;
         align-items: center;
-        background-color: #fff;
-        border: 2px solid #111;
-        box-sizing: border-box;
-        color: #111;
         cursor: pointer;
         display: flex;
         font-size: 16px;
@@ -496,26 +492,6 @@ app-contactform{
         line-height: 24px;
         max-width: 100%;
         padding: 0 25px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-    }
-
-    .about-me-button:after {
-        background-color: #111;
-        content: "";
-        display: block;
-        height: 48px;
-        left: 0;
-        width: 100%;
-        position: absolute;
-        top: -2px;
-        transform: translate(8px, 8px);
-        transition: transform .2s ease-out;
-        z-index: -1;
     }
 
     .about-me-button:hover:after {
@@ -544,7 +520,7 @@ app-contactform{
     }
 
     h1{
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 45px;
     }
     .grid {
