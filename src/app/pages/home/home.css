@@ -38,7 +38,7 @@ h1{
     font-size: 90px;
     margin-bottom: 60px;
     line-height: 120%;
-    color: #fff;
+    color: #000;
     text-align: center;
     padding-inline: 20px;
 }
@@ -326,7 +326,7 @@ footer{
 }
 
 .about-me-text{
-    color: #fff;
+    color: #000;
     font-size: 26px;
     line-height: 150%;
     max-width: 800px;
