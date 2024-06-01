@@ -32,6 +32,7 @@ interface Events {
   title: string;
   description: string;
   location: string;
+  date: Date;
 }
 
 interface Subjects {
@@ -79,6 +80,12 @@ export class AppComponent{
 
   isWindowGreaterThan600 = window.innerWidth > 768;
 
+  private intervalId: any;
+
+  ngOnInit(): void {
+    this.updateEventLists();
+  }
+
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     this.isWindowGreaterThan600 =  window.innerWidth > 768;
@@ -106,4 +113,27 @@ export class AppComponent{
   openSnackBar(message: string) {
     this._snackBar.open(message);
   }
+
+  // Check and move events from upcoming to past if is expired
+  updateEventLists(): void {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    this.upcoming.forEach((event, index) => {
+      const eventDate = new Date(event.date);
+      if (this.isTheNextDay(eventDate, yesterday)) {
+        this.pastevents.push(event);
+        this.upcoming.splice(index, 1);
+      }
+    });
+  }
+
+  // Check if event was yesterday
+  isTheNextDay(date1: Date, date2: Date): boolean {
+    return (
+      date1.getFullYear() === date2.getFullYear() &&
+      date1.getMonth() === date2.getMonth() &&
+      date1.getDate() === date2.getDate()
+    );
+  }
+
 }
