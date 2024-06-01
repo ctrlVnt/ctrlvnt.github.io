@@ -457,7 +457,6 @@ app-contactform{
     }
 
     .about-me-button{
-        margin-top: 5%;
         align-items: center;
         cursor: pointer;
         display: flex;
@@ -496,7 +495,6 @@ app-contactform{
 
     h1{
         font-size: 50px;
-        margin-bottom: 45px;
     }
 
     .phone-screen{
