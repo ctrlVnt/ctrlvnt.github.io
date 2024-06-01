@@ -62,6 +62,11 @@ export class AppComponent{
 
   aboutme:string = textfile.aboutme;
   welcome:string = textfile.welcome;
+  department:string = textfile.department;
+  faculty:string = textfile.faculty;
+  address:string = textfile.address;
+  mail:string = textfile.mail;
+  university_link:string = textfile.university_link;
   
   publications: Publication[] = pubblicationsfile.publications;
 

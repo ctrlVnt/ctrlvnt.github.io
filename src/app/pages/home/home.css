@@ -76,6 +76,8 @@ a{
 
 span{
     color: #000;
+    overflow-wrap: break-word; /* Proprieta' recente, funziona come word-wrap */
+    white-space: normal;
 }
 
 section{

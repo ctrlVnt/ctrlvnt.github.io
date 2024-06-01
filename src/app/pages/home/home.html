@@ -95,9 +95,9 @@
                 <button mat-menu-item (click)="copyToClipboard(); openSnackBar('email address copied')"><mat-icon>file_copy</mat-icon>Copy</button>
                 <button mat-menu-item (click)="writeMessage()"><mat-icon> email</mat-icon>Write directly</button>
               </mat-menu>
-            <p class="info">Department of Algebra <br>
-                <a href="https://www.mff.cuni.cz/en/faculty/contacts" target="_blank">Charles University, Faculty of Mathematics and PhysicsKe </a><br>
-                Karlovu 3, 121 16 Praha 2, Czech Republic</p>
+            <p class="info">{{department}}<br>
+                <a href="{{university_link}}" target="_blank">{{faculty}} </a><br>
+                {{address}}</p>
             
         <footer *ngIf="isWindowGreaterThan600">
             <h3>Credits</h3>
