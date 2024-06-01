@@ -76,7 +76,8 @@ a{
 
 span{
     color: #000;
-    overflow-wrap: break-word; /* Proprieta' recente, funziona come word-wrap */
+    word-break: break-word;
+    overflow-wrap: break-word;
     white-space: normal;
 }
 
@@ -107,47 +108,6 @@ section{
     right: 10px;
 }
 
-.publications{
-    position: relative;
-    background-color: #fff;
-    border: 2px solid #111;
-    box-sizing: border-box;
-    color: #111;
-    justify-content: center;
-    padding: 0 25px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.publications:after{
-    background-color: #111;
-    content: "";
-    height: 100%;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
-}
-
-.publications:hover:after {
-    transform: translate(0, 0);
-}
-
-.publications:active {
-    background-color: #fff;
-    outline: 0;
-}
-
-.publications:hover {
-    background-color: #B94ED9;
-    outline: 0;
-}
-
 @media (min-width: 768px) {
   .publications {
     padding: 0 40px;
@@ -162,16 +122,22 @@ section{
     margin-right: auto;
 }
 
-mat-list-item{
-    z-index: 1;
+mat-list-item:nth-child(n){
+    height: 10vh;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+mat-card:nth-child(n){
+    border-radius: 15px;
+    padding: 20px;
 }
 
 .research-title{
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    line-height: 120%; 
-    margin-top: 25px;
+    line-height: 120%;
 }
 
 .research-item{
@@ -182,13 +148,12 @@ mat-list-item{
 
 .research-item:hover .research-title,
 .research-item:hover .research-text{
-    color:#fff;
+    color:#585858;
 }
 
 .research-text{
     margin-top: 15px;
-    line-height: 120%;
-    margin-bottom: 25px;
+    line-height: 140%;
 }
 
 .menu-icon{}

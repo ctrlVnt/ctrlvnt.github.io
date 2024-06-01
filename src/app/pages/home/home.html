@@ -42,10 +42,12 @@
             <h2>Research</h2>
             <div class="grid">
                 <a class="research-item" *ngFor="let publication of publications" href="{{publication.link}}" target="_blank">
-                    <div class="publications">
-                        <h3 class="research-title">{{publication.title}}</h3>
-                        <p class="research-text">{{publication.description}}</p>
-                    </div>
+                    <mat-card>
+                        <mat-card-content>
+                            <h3 class="research-title">{{publication.title}}</h3>
+                            <p class="research-text">{{publication.description}}</p>
+                        </mat-card-content>
+                    </mat-card>
                 </a>
             </div>
     </section>
