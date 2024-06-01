@@ -61,6 +61,7 @@ export class AppComponent{
   title = 'chiarasava';
 
   aboutme:string = textfile.aboutme;
+  welcome:string = textfile.welcome;
   
   publications: Publication[] = pubblicationsfile.publications;
 
