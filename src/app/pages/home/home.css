@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root{
     --blue-light: #559BD9;
     --blue: #4D7A8C;
@@ -31,7 +33,7 @@
 }
 
 h1{
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 90px;
     margin-bottom: 60px;
     line-height: 90%;
@@ -41,7 +43,7 @@ h1{
 }
 
 h2{
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 40px;
     z-index: 1;
     color: #000;
@@ -81,7 +83,7 @@ section{
 .header{
     height: 100vh;
     padding-top: 0px;
-    background-color: #F20544;
+    background-color: #F56477;
 }
 
 .image {
@@ -225,7 +227,7 @@ mat-drawer {
 }
 
 .div-header{
-    background-color: #F20544;
+    background-color: #F56477;
     overflow-x: hidden;
     position:relative;
     display: flex;
@@ -308,31 +310,16 @@ footer{
     position: relative;
     align-items: center;
     margin-left: 70px;
-    background-color: #fff;
-    border: 2px solid #111;
     box-sizing: border-box;
-    color: #111;
     display: flex;
     justify-content: center;
     padding: 25px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.container:after{
-    background-color: #111;
-    content: "";
-    height: 100%;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    z-index: -1;
+    text-align: left;
 }
 
 .about-me-text{
-    font-size: 23px;
+    color: #fff;
+    font-size: 26px;
     line-height: 150%;
     max-width: 800px;
 }
@@ -570,58 +557,8 @@ app-contactform{
     }
 }
 
-
-.button-56 {
-    align-items: center;
-    background-color: #fff;
-    border: 2px solid #111;
-    box-sizing: border-box;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    font-size: 16px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.button-56:after {
-    background-color: #111;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
-}
-
-.button-56:hover:after {
-    transform: translate(0, 0);
-}
-
-.button-56:active {
-    background-color: #fff;
-    outline: 0;
-}
-
-.button-56:hover {
-    outline: 0;
-}
-
 @media (min-width: 768px) {
-  .button-56 {
+  .button {
     padding: 0 40px;
   }
 }
@@ -646,11 +583,11 @@ app-contactform{
 }
 
 #Teaching{
-    background-color: #0CF25D;
+    background-color: #4AF589;
 }
 
 #Links{
-    background-color: #00A8C2;
+    background-color: #49EDF5;
 }
 
 #Contact{

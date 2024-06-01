@@ -89,7 +89,7 @@
         <app-contactform></app-contactform>
         
             <p>Or write directly at: </p>
-            <a><button mat-button class="button-56" [matMenuTriggerFor]="menu">sava&#64;karlin.mff.cuni.cz</button></a>
+            <a><button mat-button [matMenuTriggerFor]="menu">sava&#64;karlin.mff.cuni.cz</button></a>
             <mat-menu #menu="matMenu">
                 <button mat-menu-item (click)="copyToClipboard(); openSnackBar('email address copied')"><mat-icon>file_copy</mat-icon>Copy</button>
                 <button mat-menu-item (click)="writeMessage()"><mat-icon> email</mat-icon>Write directly</button>
