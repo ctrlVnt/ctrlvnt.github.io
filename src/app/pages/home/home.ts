@@ -70,7 +70,8 @@ export class AppComponent{
   
   publications: Publication[] = pubblicationsfile.publications;
 
-  events: Events[] = eventsfile.events;
+  pastevents: Events[] = eventsfile.past;
+  upcoming: Events[] = eventsfile.upcoming;
 
   subjects: Subjects[] = subjectsfile.subjects;
 

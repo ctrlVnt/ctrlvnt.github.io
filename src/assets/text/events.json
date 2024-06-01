@@ -1,8 +1,26 @@
 {
-    "events": [
+    "past": [
+        {
+          "title": "Lo spazio cosmico che forma un'effetto psichedelico",
+          "description": "Martedì, 16 Settembre, 2006 - 17:00 à 19:00",
+          "location": "UniTo, Torino -> aula magna"
+        },
+        {
+          "title": "Perché gli uccelli prendono la mira sulle persone",
+          "description": "Lunedì, 4 Gennaio, 2023 - 11:00 à 18:00",
+          "location": "Université Savoie Mont Blanc, Chambéry -> salle 15"
+        },
         {
           "title": "Bridges between representation theory and homotopy theory",
           "description": "Jeudi, 7 Décembre, 2023 - 17:00 à 18:00",
+          "location": "Charles University, Prague -> salle 4"
+        }
+      ],
+
+      "upcoming": [
+        {
+          "title": "La società delle formiche è uguale alla società umana",
+          "description": "Venerdì, 15 Leglio, 2024 - 17:00 à 18:00",
           "location": "Charles University, Prague -> salle 4"
         }
       ]

@@ -184,6 +184,10 @@ mat-drawer {
     margin: 30px;
 }
 
+.talks-title{
+    font-weight: bold;
+}
+
 .subject-list,
 .link-list{
     width: 90%;

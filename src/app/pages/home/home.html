@@ -55,15 +55,25 @@
 
     <section id="Events">
        <h2>Events</h2>
-
-        <mat-list class="subject-list">
-                <mat-list-item *ngFor="let ev of events">
-                    <span matListItemTitle>{{ev.title}}</span>
-                    <span matListItemLine>{{ev.description}}</span>
-                    <span matListItemLine>{{ev.location}}</span>
+       <div class="grid">
+            <mat-list class="subject-list">
+                <h3 class="talks-title">Past talks</h3>
+                <mat-list-item *ngFor="let pev of pastevents">
+                    <span matListItemTitle>{{pev.title}}</span>
+                    <span matListItemLine>{{pev.description}}</span>
+                    <span matListItemLine>{{pev.location}}</span>
                 </mat-list-item>
-        </mat-list>
+            </mat-list>
 
+            <mat-list class="subject-list">
+                <h3 class="talks-title">Upcoming talks</h3>
+                    <mat-list-item *ngFor="let uev of upcoming">
+                        <span matListItemTitle>{{uev.title}}</span>
+                        <span matListItemLine>{{uev.description}}</span>
+                        <span matListItemLine>{{uev.location}}</span>
+                    </mat-list-item>
+            </mat-list>
+       </div>
     </section>
 
     <section id="Teaching">
