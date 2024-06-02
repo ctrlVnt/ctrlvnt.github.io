@@ -1,14 +1,15 @@
 {
     "publications": [
       {
-        "title": "∞-Dold-Kan correspondence via representation theory",
-        "description": "C.Sava, arXiv preprint, 2022",
-        "link": "https://browse.arxiv.org/abs/2211.00762"
-      },
-      {
         "title": "Equivalent definitions of the preprojective algebra",
         "description": "C.Sava, arXiv preprint, 2022",
         "link": "https://browse.arxiv.org/abs/2203.00792"
+      },
+      
+      {
+        "title": "∞-Dold-Kan correspondence via representation theory",
+        "description": "C.Sava, arXiv preprint, 2022",
+        "link": "https://browse.arxiv.org/abs/2211.00762"
       }
     ]
 }
