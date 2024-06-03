@@ -1,5 +1,6 @@
 {
-    "past": [
+
+  "past": [
         {
           "title": "Lo spazio cosmico che forma un'effetto psichedelico",
           "description": "Tuesday, 16 September, 2006 - 17:00 à 19:00",
@@ -20,12 +21,14 @@
           "location": "Conference Geometry, Analysis and Representations",
           "description": "Friday 14 June 2024, Aristotle University of Thessaloniki",
           "date": "Fri Jun 14 2024"
+          "link": "https://sites.google.com/view/geometry-analysis-reps/home"
         },
         {
           "title": "The derivator associated to a dg-catgeory.",
           "location": "International Category Theory Conference CT2024",
           "description": "Friday 28 June 2024, University of Santiago de Compostela",
           "date": "Fri Jun 28 2024"
+          "link": "https://www.usc.gal/regaca/ct2024/index.html"
         }
       ]
 }
