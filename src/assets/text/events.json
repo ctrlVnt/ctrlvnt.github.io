@@ -2,13 +2,14 @@
 
   "past": [
         {
-          "title": "Lo spazio cosmico che forma un'effetto psichedelico",
-          "description": "Tuesday, 16 September, 2006 - 17:00 à 19:00",
-          "location": "UniTo, Torino -> aula magna",
+          "title": "The derivator associated to a dg-catgeory",
+          "description": "Purity, Approximation Theory and Spectra",
+          "location": "Cetraro",
           "date": "Tue Sep 16 2006"
+          "link": "http://profs.scienze.univr.it/laking/Cetraro/html5up-strata/index.html"
         },
         {
-          "title": "Perché gli uccelli prendono la mira sulle persone",
+          "title": "∞-Dold-Kan correspondence via representation theory",
           "description": "Monday, 4 January, 2023 - 11:00 à 18:00",
           "location": "Université Savoie Mont Blanc, Chambéry -> salle 15",
           "date": "Mon Jan 04 2023"
@@ -18,13 +19,13 @@
       "upcoming": [
         {
           "title":"∞-Dold-Kan correspondence via representation theory",
-          "location": "Conference Geometry, Analysis and Representations",
+          "location": "Geometry, Analysis and Representations",
           "description": "Friday 14 June 2024, Aristotle University of Thessaloniki",
           "date": "Fri Jun 14 2024"
           "link": "https://sites.google.com/view/geometry-analysis-reps/home"
         },
         {
-          "title": "The derivator associated to a dg-catgeory.",
+          "title": "The derivator associated to a dg-catgeory",
           "location": "International Category Theory Conference CT2024",
           "description": "Friday 28 June 2024, University of Santiago de Compostela",
           "date": "Fri Jun 28 2024"
