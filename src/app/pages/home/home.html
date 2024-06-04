@@ -57,7 +57,7 @@
             <mat-list class="subject-list">
                 <h3 class="talks-title">Past talks</h3>
                 <mat-list-item *ngFor="let pev of pastevents">
-                    <span matListItemTitle>{{pev.title}}</span>
+                    <a matListItemTitle href="{{pev.link}}" target="_blank">{{pev.title}}</a>
                     <span matListItemLine>{{pev.description}}</span>
                     <span matListItemLine>{{pev.location}}</span>
                 </mat-list-item>
@@ -66,7 +66,7 @@
             <mat-list class="subject-list">
                 <h3 class="talks-title">Upcoming talks</h3>
                     <mat-list-item *ngFor="let uev of upcoming">
-                        <span matListItemTitle>{{uev.title}}</span>
+                        <a matListItemTitle href="{{uev.link}}" target="_blank">{{uev.title}}</a>
                         <span matListItemLine>{{uev.description}}</span>
                         <span matListItemLine>{{uev.location}}</span>
                     </mat-list-item>

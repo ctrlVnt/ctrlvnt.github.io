@@ -33,6 +33,7 @@ interface Events {
   description: string;
   location: string;
   date: Date;
+  link: string;
 }
 
 interface Subjects {
