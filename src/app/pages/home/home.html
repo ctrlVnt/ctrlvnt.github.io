@@ -56,20 +56,22 @@
        <div class="grid">
             <mat-list class="subject-list">
                 <h3 class="talks-title">Past talks</h3>
-                <mat-list-item *ngFor="let pev of pastevents">
-                    <span matListItemTitle>{{pev.title}}</span>
+                <div *ngFor="let pev of pastevents">
+                    <span matListItemTitle><b>{{pev.title}}</b></span>
                     <span matListItemLine>{{pev.description}}</span>
                     <a matListItemLine href="{{pev.link}}" target="_blank">{{pev.location}}</a>
-                </mat-list-item>
+                    <br>
+                </div>
             </mat-list>
-
+            
             <mat-list class="subject-list">
                 <h3 class="talks-title">Upcoming talks</h3>
-                    <mat-list-item *ngFor="let uev of upcoming">
-                        <span matListItemTitle>{{uev.title}}</span>
+                    <div *ngFor="let uev of upcoming">
+                    <span matListItemTitle><b>{{uev.title}}</b></span>
                     <span matListItemLine>{{uev.description}}</span>
                     <a matListItemLine href="{{uev.link}}" target="_blank">{{uev.location}}</a>
-                    </mat-list-item>
+                    <br>
+                    </div>
             </mat-list>
        </div>
     </section>
