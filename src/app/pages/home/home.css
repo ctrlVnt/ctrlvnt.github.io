@@ -50,6 +50,7 @@ h1{
 h2{
     font-family: "Lato", sans-serif;
     font-size: 40px;
+    
     z-index: 1;
     color: #000;
 }
@@ -198,7 +199,7 @@ mat-drawer {
 
 .subject-list a,
 .link-list a{
-    text-decoration: none;
+    color: #7c0c9e;
     font-size: 22;
 }
 
