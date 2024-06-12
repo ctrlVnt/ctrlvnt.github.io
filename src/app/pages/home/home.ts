@@ -69,6 +69,7 @@ export class AppComponent{
   address:string = textfile.address;
   mail:string = textfile.mail;
   university_link:string = textfile.university_link;
+  talkslegend:string = textfile.talks;
   
   publications: Publication[] = pubblicationsfile.publications;
 
