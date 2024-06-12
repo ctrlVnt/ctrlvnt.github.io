@@ -3,10 +3,17 @@
   "past": [
         {
           "title": "The derivator associated to a dg-catgeory",
-          "description": "Purity, Approximation Theory and Spectra",
-          "location": "Cetraro",
-          "date": "Tue Sep 16 2006",
+          "description": "Wednesday May 15 2024, Cetraro",
+          "location": "Purity, Approximation Theory and Spectra",
+          "date": "Wed May 15 2024",
           "link": "http://profs.scienze.univr.it/laking/Cetraro/html5up-strata/index.html"
+        },
+     {
+          "title":"∞-Dold-Kan correspondence via representation theory",
+          "location": "Algebra Seminar",
+          "description": "Monday 19 December 2022, Charles University, Prague",
+          "date": "Mon Dec 19 2022",
+          "link": "https://www.mff.cuni.cz/en/math/ka/events/seminars/algebra-seminar"
         }
       ],
 
