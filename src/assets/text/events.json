@@ -8,6 +8,13 @@
           "date": "Wed May 15 2024",
           "link": "http://profs.scienze.univr.it/laking/Cetraro/html5up-strata/index.html"
         },
+     {
+          "title":"Bridges between representation theory and homotopy theory",
+          "location": "Séminaire Compréhensible",
+          "description": "Thursday 7 December 2023, Institut Fourier, Université Grenoble Alpes",
+          "date": "Thu Dec 7 2023",
+          "link": "https://www-fourier.ujf-grenoble.fr/?q=fr/content/chiara-sava"
+        },
     {
           "title":"∞-Dold-Kan correspondence via representation theory",
           "location": "MALGA Seminar",
@@ -18,7 +25,7 @@
     {
           "title":"∞-Dold-Kan correspondence via representation theory**",
           "location": "IWoAT Summer School 2023: Operads, spectra, and multiplicative structures",
-          "description": "Wednesday 16 August 2023, Yanqi Lake Beijing Institute of Mathematical Sciences and Applications*",
+          "description": "Wednesday 16 August 2023, Yanqi Lake BIMSA",
           "date": "Wed Aug 16 2023",
           "link": "https://iwoat.github.io/school2023"
         },
