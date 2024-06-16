@@ -86,7 +86,7 @@
         <h2>Some links</h2>
          <mat-list class="link-list">
                  <mat-list-item *ngFor="let link of links">
-                     <a matListItemTitle href="{{link.link}}" target="_blank">{{link.title}}</a>
+                     <a matListItemTitle href="{{link.link}}" target="_blank"><b>{{link.title}}</b></a>
                      <span matListItemLine>{{link.description}}</span>
                  </mat-list-item>
          </mat-list>
