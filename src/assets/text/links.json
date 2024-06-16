@@ -1,13 +1,19 @@
 {
     "links": [
+ {
+          "title": "Trimester Program: Spectral Methods in Algebra, Geometry, and Topology",
+          "description": "16 September-12 December 2022, Hausdorff Research Institute for Mathematics, University of Bonn",
+          "link": "https://sites.google.com/view/welcomehome2023/home-page"
+        },
+      
         {
           "title": "Welcome Home 2023",
-          "description": "21-22 December 2023, Università degli studi di Torino",
+          "description": "21-22 December 2023, Università of Turin",
           "link": "https://sites.google.com/view/welcomehome2023/home-page"
         },
         {
           "title": "Welcome Home 2021",
-          "description": "21-22 December 2021, Università degli studi di Torino",
+          "description": "21-22 December 2021, University of Turin",
           "link": "https://sites.google.com/site/welcomehomeunito/welcome-home-2021"
         }
       ]
