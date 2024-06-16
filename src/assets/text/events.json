@@ -1,9 +1,17 @@
 {
 
   "past": [
+    {
+          "title":"∞-Dold-Kan correspondence via representation theory",
+          "location": "Geometry, Analysis and Representations",
+          "description": "Friday 14 June 2024, Aristotle University of Thessaloniki",
+          "date": "Fri Jun 14 2024",
+          "link": "https://sites.google.com/view/geometry-analysis-reps/home"
+        },
+    
         {
           "title": "The derivator associated to a dg-catgeory**",
-          "description": "Wednesday May 15 2024, Cetraro",
+          "description": "Wednesday 15 May 2024, Cetraro",
           "location": "Purity, Approximation Theory and Spectra",
           "date": "Wed May 15 2024",
           "link": "http://profs.scienze.univr.it/laking/Cetraro/html5up-strata/index.html"
@@ -67,13 +75,7 @@
       ],
 
       "upcoming": [
-        {
-          "title":"∞-Dold-Kan correspondence via representation theory",
-          "location": "Geometry, Analysis and Representations",
-          "description": "Friday 14 June 2024, Aristotle University of Thessaloniki",
-          "date": "Fri Jun 14 2024",
-          "link": "https://sites.google.com/view/geometry-analysis-reps/home"
-        },
+        
         {
           "title": "The derivator associated to a dg-catgeory",
           "location": "International Category Theory Conference CT2024",
