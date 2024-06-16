@@ -91,6 +91,15 @@
         </mat-list>
     </section>
 
+    <section id="Links">
+        <h2>Some links</h2>
+         <mat-list class="link-list">
+                 <mat-list-item *ngFor="let link of links">
+                     <a matListItemTitle href="{{link.link}}" target="_blank">{{link.title}}</a>
+                     <span matListItemLine>{{link.description}}</span>
+                 </mat-list-item>
+         </mat-list>
+     </section>
 
     <section id="Contact">
         <h2>Contact</h2>

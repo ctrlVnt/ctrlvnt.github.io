@@ -32,6 +32,7 @@ export class NavbarComponent implements OnInit {
     'Research',
     'Events',
     'Teaching',
+    'Links',
     'Contact',
   ];
 
