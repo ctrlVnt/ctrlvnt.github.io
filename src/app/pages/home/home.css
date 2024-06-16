@@ -525,6 +525,14 @@ app-contactform{
     .footer-text{
         margin-bottom: 50px;
     }
+
+    .subject-list:first-child {
+        order: 2;
+    }
+    
+    .subject-list:last-child {
+        order: 1;
+    }
 }
 
 @media (min-width: 768px) {
