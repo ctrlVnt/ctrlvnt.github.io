@@ -1,6 +1,14 @@
 {
 
   "past": [
+    
+        {
+          "title":"∞-Dold-Kan correspondence via representation theory",
+          "location": "Geometry, Analysis and Representations",
+          "description": "Friday 14 June 2024, Aristotle University of Thessaloniki",
+          "date": "Fri Jun 14 2024",
+          "link": "https://sites.google.com/view/geometry-analysis-reps/home"
+        },
   
         {
           "title": "The derivator associated to a dg-catgeory**",
@@ -68,13 +76,6 @@
       ],
 
       "upcoming": [
-         {
-          "title":"∞-Dold-Kan correspondence via representation theory",
-          "location": "Geometry, Analysis and Representations",
-          "description": "Friday 14 June 2024, Aristotle University of Thessaloniki",
-          "date": "Fri Jun 14 2024",
-          "link": "https://sites.google.com/view/geometry-analysis-reps/home"
-        },
         
         {
           "title": "The derivator associated to a dg-catgeory*",
