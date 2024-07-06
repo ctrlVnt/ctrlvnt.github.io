@@ -116,26 +116,25 @@ export class AppComponent{
     this._snackBar.open(message);
   }
 
-  // Check and move events from upcoming to past if is expired
+
+  // Check and move events from upcoming to past if they are expired
   updateEventLists(): void {
-    const yesterday = new Date();
-    yesterday.setDate(yesterday.getDate() - 1);
+    const today = new Date();
     this.upcoming.forEach((event, index) => {
       const eventDate = new Date(event.date);
-      if (this.isTheNextDay(eventDate, yesterday)) {
-        this.pastevents.push(event);
+      if (this.isInThePast(eventDate, today)) {
+        this.pastevents.splice(0, 0, event);
         this.upcoming.splice(index, 1);
       }
     });
   }
 
-  // Check if event was yesterday
-  isTheNextDay(date1: Date, date2: Date): boolean {
-    return (
-      date1.getFullYear() === date2.getFullYear() &&
-      date1.getMonth() === date2.getMonth() &&
-      date1.getDate() === date2.getDate()
-    );
+  // Check if the event date is in the past
+  isInThePast(eventDate: Date, today: Date): boolean {
+
+    eventDate.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
+    return eventDate < today;
   }
 
 }
