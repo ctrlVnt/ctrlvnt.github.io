@@ -37,9 +37,13 @@
     </section>     
 
     <section id="Research">
-            <h2>Research</h2>
-            <div class="grid">
-                <a class="research-item" *ngFor="let publication of publications" href="{{publication.link}}" target="_blank">
+        <h2>Research</h2>
+        <div class="grid">
+            <ng-container *ngFor="let publication of publications">
+                <a *ngIf="publication.link; else noLink" 
+                   class="research-item" 
+                   [href]="publication.link" 
+                   target="_blank">
                     <mat-card>
                         <mat-card-content>
                             <h3 class="research-title">{{publication.title}}</h3>
@@ -47,8 +51,20 @@
                         </mat-card-content>
                     </mat-card>
                 </a>
-            </div>
-    </section>
+                
+                <ng-template #noLink>
+                    <div class="research-item">
+                        <mat-card>
+                            <mat-card-content>
+                                <h3 class="research-title">{{publication.title}}</h3>
+                                <p class="research-text">{{publication.description}}</p>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </div>
+    </section>    
     
 
     <section id="Events">
