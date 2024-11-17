@@ -1,5 +1,19 @@
 {
   "past": [
+       {
+          "title":"∞-Dold-Kan correspondence via representation theory",
+          "location": "Algebraic Geometry Seminar",
+          "description": "Wednesday 13 November 2024, University of Luxembourg",
+          "date": "Wed Nov 13 2024",
+          "link": "https://pbelmans.ncag.info/uni.lu/seminar"
+        },
+     {
+      "title": "The derivator associated to a dg-catgeory*",
+      "location": "International Category Theory Conference CT2024",
+      "description": "Friday 28 June 2024, University of Santiago de Compostela",
+      "date": "Fri Jun 28 2024",
+      "link": "https://www.usc.gal/regaca/ct2024/index.html"
+    },
     
         {
           "title":"∞-Dold-Kan correspondence via representation theory",
@@ -78,10 +92,10 @@
     
     {
       "title": "The derivator associated to a dg-catgeory*",
-      "location": "International Category Theory Conference CT2024",
-      "description": "Friday 28 June 2024, University of Santiago de Compostela",
-      "date": "Fri Jun 28 2024",
-      "link": "https://www.usc.gal/regaca/ct2024/index.html"
+      "location": "Algebra Seminar",
+      "description": "Wednesday 27 November 2024, Masaryk University, Brno",
+      "date": "Wed Nov 27 2024",
+      "link": "https://www.math.muni.cz/~bourkej/BAS.html"
     }
   ]
 }
