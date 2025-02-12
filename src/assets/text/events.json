@@ -96,6 +96,13 @@
       "description": "Wednesday 27 November 2024, Masaryk University, Brno",
       "date": "Wed Nov 27 2024",
       "link": "https://www.math.muni.cz/~bourkej/BAS.html"
-    }
+    },
+    {
+          "title":"∞-Dold-Kan correspondence via representation theory",
+          "location": "Australian Category Seminar",
+          "description": "Wednesday 19 February 2025, Macquarie University, Sydney",
+          "date": "Wed Feb 19 2025",
+          "link": "https://centre-of-australian-category-theory.github.io/seminar/"
+        }
   ]
 }
