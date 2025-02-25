@@ -1,12 +1,5 @@
 {
   "past": [
-      {
-          "title":"The derivator associated to a dg-category",
-          "location": "Australian Category Seminar",
-          "description": "Wednesday 5 March 2025, Macquarie University, Sydney",
-          "date": "Wed Mar 5 2025",
-          "link": "https://centre-of-australian-category-theory.github.io/seminar/"
-        },
     {
           "title":"∞-Dold-Kan correspondence via representation theory",
           "location": "Australian Category Seminar",
@@ -109,8 +102,12 @@
         }
       ],
 
-  "upcoming": [
-    
-   
-  ]
+  "upcoming": [   {
+          "title":"The derivator associated to a dg-category",
+          "location": "Australian Category Seminar",
+          "description": "Wednesday 5 March 2025, Macquarie University, Sydney",
+          "date": "Wed Mar 5 2025",
+          "link": "https://centre-of-australian-category-theory.github.io/seminar/"
+        }
+    ]
 }
