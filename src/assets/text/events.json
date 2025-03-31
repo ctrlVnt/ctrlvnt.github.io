@@ -1,5 +1,18 @@
 {
-  "past": [
+  "past": [ {
+          "title":"∞-Dold-Kan correspondence via representation theory",
+          "location": "University of Sydney Algebra Seminar",
+          "description": "Friday 28 March 2025, University of Sydney",
+          "date": "Fri Mar 28 2025",
+          "link": "https://www.maths.usyd.edu.au/u/AlgebraSeminar/"
+        },
+    {
+          "title":"∞-Dold-Kan correspondence via representation theory",
+          "location": "Pure mathematics seminar",
+          "description": "Friday 14 March 2025, University of Melbourne",
+          "date": "Fri Mar 14 2025",
+          "link": "https://ms.unimelb.edu.au/research/pure-mathematics/seminars"
+        },
      {
           "title":"The derivator associated to a dg-category",
           "location": "Australian Category Seminar",
@@ -109,19 +122,8 @@
         }
       ],
 
-  "upcoming": [     {
-          "title":"∞-Dold-Kan correspondence via representation theory",
-          "location": "Pure mathematics seminar",
-          "description": "Friday 14 March 2025, University of Melbourne",
-          "date": "Fri Mar 14 2025",
-          "link": "https://ms.unimelb.edu.au/research/pure-mathematics/seminars"
-        },
-     {
-          "title":"∞-Dold-Kan correspondence via representation theory",
-          "location": "University of Sydney Algebra Seminar",
-          "description": "Friday 28 March 2025, University of Sydney",
-          "date": "Fri Mar 28 2025",
-          "link": "https://www.maths.usyd.edu.au/u/AlgebraSeminar/"
-        }
+  "upcoming": [    
+
+    
     ]
 }
