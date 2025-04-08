@@ -122,7 +122,13 @@
         }
       ],
 
-  "upcoming": [    
+  "upcoming": [   {
+          "title":"Differential graded algebras in differential categories",
+          "location": "Australian Category Seminar",
+          "description": "Wednesday 9 April 2025, Macquarie University, Sydney",
+          "date": "Wed Apr 9 2025",
+          "link": "https://centre-of-australian-category-theory.github.io/seminar/"
+        } 
 
     
     ]
