@@ -83,11 +83,12 @@
             
             <mat-list class="subject-list">
                 <h3 class="talks-title">Upcoming talks</h3>
+                    <h4 *ngIf="upcoming.length == 0">No talks are scheduled at the moment!</h4>
                     <div *ngFor="let uev of upcoming">
-                    <span matListItemTitle><b>{{uev.title}}</b></span>
-                    <span matListItemLine>{{uev.description}}</span>
-                    <a matListItemLine href="{{uev.link}}" target="_blank">{{uev.location}}</a>
-                    <br>
+                        <span matListItemTitle><b>{{uev.title}}</b></span>
+                        <span matListItemLine>{{uev.description}}</span>
+                        <a matListItemLine href="{{uev.link}}" target="_blank">{{uev.location}}</a>
+                        <br>
                     </div>
             </mat-list>
        </div>
