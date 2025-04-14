@@ -128,6 +128,10 @@ section{
     margin-right: auto;
 }
 
+.expand-button{
+    margin-top: 15px;
+}
+
 mat-list-item:nth-child(n){
     height: 10vh;
     min-height: 100px;
@@ -162,8 +166,6 @@ mat-card:nth-child(n){
     line-height: 140%;
 }
 
-.menu-icon{}
-
 mat-drawer-container {
     background-color: white;
     width: 100%;
@@ -194,6 +196,16 @@ mat-drawer {
     font-weight: bold;
 }
 
+.past-talks {
+    max-height: 360px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+.past-talks.expanded {
+max-height: none;
+}
+
 .legenda{
     position: absolute;
     margin-top: 30px;
@@ -220,6 +232,10 @@ mat-drawer {
 .subject-list a:hover,
 .link-list a:hover{
     color: #B94ED9;
+}
+
+.link-list span{
+    line-height: 1;
 }
 
 .div-header{
@@ -294,7 +310,7 @@ footer{
     height: 5vh;
     text-align: center;
     align-content: center;
-    margin-bottom: 0;
+    margin-bottom: 15vh;
 }
 
 
@@ -315,6 +331,7 @@ footer{
     font-size: 26px;
     line-height: 150%;
     max-width: 800px;
+    text-align: left;
 }
 
 .footer-text{

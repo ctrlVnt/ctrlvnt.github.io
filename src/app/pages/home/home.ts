@@ -51,7 +51,7 @@ interface Links {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule],
+  imports: [CommonModule, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -83,6 +83,7 @@ export class AppComponent{
   isWindowGreaterThan600 = window.innerWidth > 768;
 
   seePasTalk: boolean = false;
+  isListExpanded: boolean = false;
 
   ngOnInit(): void {
     this.updateEventLists();
@@ -139,5 +140,9 @@ export class AppComponent{
 
   openPasTalks(){
     this.seePasTalk = true;
+  }
+
+  expandPasTalks(){
+    this.isListExpanded = true;
   }
 }

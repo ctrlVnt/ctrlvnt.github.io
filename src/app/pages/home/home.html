@@ -70,16 +70,19 @@
     <section id="Events">
        <h2>Events</h2>
        <div class="grid">
-            <mat-list *ngIf="seePasTalk == true" class="subject-list">
-                <h3 class="talks-title">Past talks</h3>
-                <div *ngFor="let pev of pastevents">
-                    <span matListItemTitle><b>{{pev.title}}</b></span>
-                    <span matListItemLine>📅{{pev.description}}</span>
-                    <a matListItemLine href="{{pev.link}}" target="_blank">{{pev.location}}</a>
-                    <p class="talks"></p>
-                    <br>
-                </div>
-            </mat-list>
+            <div class="subject-list">
+                <mat-list [ngClass]="{'expanded': isListExpanded}"  *ngIf="isWindowGreaterThan600 == true || seePasTalk == true" class="past-talks">
+                    <h3 class="talks-title">Past talks</h3>
+                    <div *ngFor="let pev of pastevents">
+                        <span matListItemTitle><b>{{pev.title}}</b></span>
+                        <span matListItemLine>📅{{pev.description}}</span>
+                        <a matListItemLine href="{{pev.link}}" target="_blank">{{pev.location}}</a>
+                        <p class="talks"></p>
+                        <br>
+                    </div>
+                </mat-list>
+                <button class="expand-button" mat-flat-button *ngIf="isWindowGreaterThan600 && isListExpanded ==false" (click)="expandPasTalks()">See all past talks👀</button>
+            </div>
             
             <mat-list class="subject-list">
                 <h3 class="talks-title">Upcoming talks</h3>
@@ -92,7 +95,7 @@
                     </div>
             </mat-list>            
        </div>
-       <button mat-flat-button *ngIf="seePasTalk == false" (click)="openPasTalks()">See past talks👀</button>
+       <button mat-flat-button *ngIf="isWindowGreaterThan600 == false && seePasTalk == false" (click)="openPasTalks()">See past talks👀</button>
        <div class="legenda">
             <p>{{talkslegend[0]}}</p>
             <p>{{talkslegend[1]}}</p>
