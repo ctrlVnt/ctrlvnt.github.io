@@ -6,7 +6,7 @@
 
     <app-navbar></app-navbar>
     
-    <section id="header" class="header">
+    <section id="header">
         <mat-drawer-container [hasBackdrop]="true">
             <mat-drawer #drawer mode="over" autoFocus="false">
                 <button mat-icon-button id="clearButton" class="clear-icon" (click)="drawer.close()">
@@ -34,7 +34,7 @@
                 </button>
             </div>
         </mat-drawer-container>
-    </section>     
+    </section>
 
     <section id="Research">
         <h2>Research</h2>
@@ -70,11 +70,11 @@
     <section id="Events">
        <h2>Events</h2>
        <div class="grid">
-            <mat-list class="subject-list">
+            <mat-list *ngIf="seePasTalk == true" class="subject-list">
                 <h3 class="talks-title">Past talks</h3>
                 <div *ngFor="let pev of pastevents">
                     <span matListItemTitle><b>{{pev.title}}</b></span>
-                    <span matListItemLine>{{pev.description}}</span>
+                    <span matListItemLine>📅{{pev.description}}</span>
                     <a matListItemLine href="{{pev.link}}" target="_blank">{{pev.location}}</a>
                     <p class="talks"></p>
                     <br>
@@ -90,8 +90,9 @@
                         <a matListItemLine href="{{uev.link}}" target="_blank">{{uev.location}}</a>
                         <br>
                     </div>
-            </mat-list>
+            </mat-list>            
        </div>
+       <button mat-flat-button *ngIf="seePasTalk == false" (click)="openPasTalks()">See past talks👀</button>
        <div class="legenda">
             <p>{{talkslegend[0]}}</p>
             <p>{{talkslegend[1]}}</p>
@@ -140,6 +141,6 @@
                 <p>Built with <span class="love">❤</span> by <a href="https://riccardoventurini.dev/">Riccardo Venturini</a></p>
             </div>
         </footer>
-        <p *ngIf="!isWindowGreaterThan600">Built with <span class="love">❤</span> by <a href="https://riccardoventurini.dev/">Riccardo Venturini</a></p>
+        <p *ngIf="!isWindowGreaterThan600" class="footer">Built with <span class="love">❤</span> by <a href="https://riccardoventurini.dev/">Riccardo Venturini</a></p>
     </section>
 </div>

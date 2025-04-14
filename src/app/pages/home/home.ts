@@ -82,7 +82,7 @@ export class AppComponent{
 
   isWindowGreaterThan600 = window.innerWidth > 768;
 
-  private intervalId: any;
+  seePasTalk: boolean = false;
 
   ngOnInit(): void {
     this.updateEventLists();
@@ -137,4 +137,7 @@ export class AppComponent{
     return eventDate < today;
   }
 
+  openPasTalks(){
+    this.seePasTalk = true;
+  }
 }
