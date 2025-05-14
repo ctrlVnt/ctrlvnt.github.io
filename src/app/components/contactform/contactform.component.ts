@@ -7,11 +7,10 @@ import {MatInputModule} from '@angular/material/input';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-contactform',
-  standalone: true,
-  imports: [ ReactiveFormsModule, MatButtonModule, MatInputModule, CommonModule ],
-  templateUrl: './contactform.component.html',
-  styleUrl: './contactform.component.css'
+    selector: 'app-contactform',
+    imports: [ReactiveFormsModule, MatButtonModule, MatInputModule, CommonModule],
+    templateUrl: './contactform.component.html',
+    styleUrl: './contactform.component.css'
 })
 export class ContactformComponent {
 

@@ -48,11 +48,10 @@ interface Links {
 }
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule],
-  templateUrl: './home.html',
-  styleUrl: './home.css',
+    selector: 'app-root',
+    imports: [CommonModule, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule],
+    templateUrl: './home.html',
+    styleUrl: './home.css'
 })
 
 export class AppComponent{
