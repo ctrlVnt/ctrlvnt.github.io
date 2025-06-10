@@ -128,7 +128,14 @@
           "description": "Wednesday 9 April 2025, Macquarie University, Sydney",
           "date": "Wed Apr 9 2025",
           "link": "https://centre-of-australian-category-theory.github.io/seminar/"
-        } 
+        },
+    {
+          "title":"∞-Dold-Kan correspondence via representation theory",
+          "location": "Seminario di Algebra e Teoria dei numeri",
+          "description": "Thursday 19 June 2025, University of Turin",
+          "date": "Thu Jun 19 2025",
+          "link": "https://www.seminarioatn.unito.it/"
+        }
 
     
     ]
