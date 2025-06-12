@@ -262,9 +262,6 @@ const pastTalks = [
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Public Talks</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Sharing the wonder and importance of mathematics with diverse audiences
-          </p>
         </div>
 
         {/* Upcoming Talks */}
