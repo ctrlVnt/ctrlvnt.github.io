@@ -214,7 +214,7 @@ const pastTalks = [
       </div>
       <a
           href={talk.link}
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm"
+          className="inline-flex items-center text-orange-600 hover:text-blue-800 text-sm"
           >
           See more
           <ExternalLink size={14} className="ml-1" />
@@ -223,7 +223,7 @@ const pastTalks = [
   );
 
   return (
-    <section id="talks" className="relative py-16 bg-muted/50 overflow-hidden">
+    <section id="talks" className="relative py-16 bg-orange-100 overflow-hidden">
       {/* Animated Wave Background */}
       <div className="absolute inset-0">
         <svg className="absolute w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="none">
@@ -250,7 +250,7 @@ const pastTalks = [
           style={{ transform: `translateY(${Math.sin(scrollY * 0.01) * 10}px)` }}
         />
         <div 
-          className="absolute bottom-32 left-20 w-4 h-4 bg-blue-300/30 rounded-full"
+          className="absolute bottom-32 left-20 w-4 h-4 bg-orange-300/30 rounded-full"
           style={{ transform: `translateY(${Math.cos(scrollY * 0.012) * 15}px)` }}
         />
         <div 

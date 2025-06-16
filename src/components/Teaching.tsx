@@ -22,7 +22,7 @@ const Teaching = () => {
   ];
 
   return (
-    <section id="teaching" className="relative py-16 bg-gray-50 overflow-hidden">
+    <section id="teaching" className="relative py-16 bg-green-100 overflow-hidden">
       {/* Animated Educational Background */}
       <div className="absolute inset-0">
         {/* Floating Books */}
@@ -30,13 +30,13 @@ const Teaching = () => {
           className="absolute top-20 left-10 opacity-20"
           style={{ transform: `translateY(${Math.sin(scrollY * 0.01) * 20}px) rotate(${scrollY * 0.02}deg)` }}
         >
-          <BookOpen size={32} className="text-blue-400" />
+          <BookOpen size={32} className="text-green-400" />
         </div>
         <div 
           className="absolute top-40 right-20 opacity-15"
           style={{ transform: `translateY(${Math.cos(scrollY * 0.008) * 25}px) rotate(${scrollY * -0.03}deg)` }}
         >
-          <BookOpen size={28} className="text-indigo-400" />
+          <BookOpen size={28} className="text-green-400" />
         </div>
         <div 
           className="absolute bottom-40 left-1/4 opacity-25"
@@ -47,13 +47,13 @@ const Teaching = () => {
         
         {/* Mathematical Formulas */}
         <div 
-          className="absolute top-32 left-1/3 text-2xl text-gray-200 font-serif opacity-60"
+          className="absolute top-32 left-1/3 text-2xl text-green-200 font-serif opacity-60"
           style={{ transform: `translateY(${scrollY * 0.08}px)` }}
         >
           f(x) = ax² + bx + c
         </div>
         <div 
-          className="absolute bottom-40 right-1/4 text-xl text-blue-200 font-serif opacity-50"
+          className="absolute bottom-40 right-1/4 text-xl text-green-200 font-serif opacity-50"
           style={{ transform: `translateY(${scrollY * -0.06}px)` }}
         >
           ∂f/∂x = lim[h→0] (f(x+h)-f(x))/h
@@ -94,7 +94,7 @@ const Teaching = () => {
                   </div>
                   <a
                       href={course.link}
-                      className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm"
+                      className="inline-flex items-center text-green-600 hover:text-green-800 text-sm"
                     >
                       See more
                       <ExternalLink size={14} className="ml-1" />

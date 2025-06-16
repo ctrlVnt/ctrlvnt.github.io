@@ -1,4 +1,5 @@
 
+import { Mail, Smile } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const Hero = () => {
@@ -11,7 +12,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-br from-yellow-50 to-indigo-100 pt-24 pb-16 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-yellow-50 to-pink-100 pt-24 pb-16 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div 
@@ -19,11 +20,11 @@ const Hero = () => {
           style={{ transform: `translateY(${scrollY * 0.3}px) rotate(${scrollY * 0.1}deg)` }}
         />
         <div 
-          className="absolute top-1/4 -right-1/4 w-80 h-80 bg-indigo-200/40 rounded-full blur-2xl"
+          className="absolute top-1/4 -right-1/4 w-80 h-80 bg-orange-200/40 rounded-full blur-2xl"
           style={{ transform: `translateY(${scrollY * -0.2}px) rotate(${scrollY * -0.1}deg)` }}
         />
         <div 
-          className="absolute bottom-0 left-1/3 w-64 h-64 bg-purple-200/30 rounded-full blur-xl"
+          className="absolute bottom-0 left-1/3 w-64 h-64 bg-green-200/30 rounded-full blur-xl"
           style={{ transform: `translateY(${scrollY * 0.15}px)` }}
         />
       </div>
@@ -43,21 +44,15 @@ const Hero = () => {
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
             I am a Ph.D. student at Charles University in Prague and 
-            I work under the supervision of <a className="text-blue-600" href="https://www.karlin.mff.cuni.cz/~stovicek/index.php/en/homepage" target="_blank">Jan Šťovíček</a>.
+            I work under the supervision of <a className="text-pink-600" href="https://www.karlin.mff.cuni.cz/~stovicek/index.php/en/homepage" target="_blank">Jan Šťovíček</a>.
             My research is mainly about homotopy theory, higher category theory and representation theory of algebras.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => document.getElementById('research')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
-            >
-              View Research
-            </button>
-            <button 
+          <div className="flex flex-row gap-4 justify-center">
+            <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-200 font-medium"
+              className="bg-pink-600 text-white w-12 h-12 rounded-full hover:bg-violet-700 transition-colors duration-200 font-medium flex items-center justify-center"
             >
-              Contact me
+              <Mail size={20} />
             </button>
           </div>
         </div>
