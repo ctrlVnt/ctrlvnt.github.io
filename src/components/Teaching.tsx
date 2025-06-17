@@ -1,8 +1,9 @@
 import { link } from 'fs';
-import { BookOpen, Users, Award, Download, ExternalLink } from 'lucide-react';
+import { BookOpen, Users, Award, Download, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const Teaching = () => {
+  const [showPast, setShowPast] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -12,6 +13,10 @@ const Teaching = () => {
   }, []);
 
   const courses = [
+    
+  ];
+
+  const pastCourses = [
     {
       code: "NMAG442",
       title: "Representation theory of finite dimensional algebras",
@@ -22,7 +27,7 @@ const Teaching = () => {
   ];
 
   return (
-    <section id="teaching" className="relative py-16 bg-green-100 overflow-hidden">
+    <section id="teaching" className="bg-gradient-to-b from-green-100 from-80% to-blue-100 to-90% relative py-16 bg-green-100 overflow-hidden">
       {/* Animated Educational Background */}
       <div className="absolute inset-0">
         {/* Floating Books */}
@@ -80,8 +85,8 @@ const Teaching = () => {
 
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Current Courses */}
-          <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Current Courses</h3>
+          <div className="mb-12">
+            {courses.length > 0 && (<h3 className="text-2xl font-semibold text-gray-900 mb-6">Current Courses</h3>)}
             <div className="space-y-4">
               {courses.map((course, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md p-6">
@@ -104,6 +109,45 @@ const Teaching = () => {
             </div>
           </div>
         </div>
+
+         {/* Past Talks Toggle */}
+        <div className="text-center mb-6">
+          <button
+            onClick={() => setShowPast(!showPast)}
+            className="inline-flex items-center space-x-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors duration-200"
+          >
+            <span>{showPast ? 'Hide' : 'Show'} Past Courses</span>
+            {showPast ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+          </button>
+        </div>
+
+        {/* Past Courses */}
+        {showPast && (
+          <div>
+            <h3 className="text-2xl font-semibold text-foreground mb-6">Past Courses</h3>
+            <div className="grid gap-6 md:grid-cols-2">
+             {pastCourses.map((course, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md p-6">
+                  <div className="flex justify-between items-start mb-3">
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900">{course.code}: {course.title}</h4>
+                      <p className="text-gray-600">{course.semester}</p>
+                      <p className="text-gray-700">{course.description}</p>
+                    </div>
+                  </div>
+                  <a
+                      href={course.link}
+                      className="inline-flex items-center text-green-600 hover:text-green-800 text-sm"
+                    >
+                      See more
+                      <ExternalLink size={14} className="ml-1" />
+                    </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
       </div>
     </section>
   );

@@ -32,7 +32,7 @@ const Research = () => {
   ];
 
   return (
-    <section id="research" className="bg-red-100 relative py-16 bg-S overflow-hidden">
+    <section id="research" className="bg-gradient-to-b from-red-100 from-80% to-orange-100 to-90% relative py-16 bg-S overflow-hidden">
       {/* Animated Mathematical Symbols Background */}
       <div className="absolute inset-0">
         <div 
@@ -77,10 +77,10 @@ const Research = () => {
   
           {/* Recent Publications */}
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Recent Publications</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Publications</h3>
             <div className="space-y-4">
               {publications.map((pub, index) => (
-                <div key={index} className="border border-red-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div key={index} className="bg-card border border-red-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                   <h4 className="font-medium text-gray-900 mb-2">{pub.title}</h4>
                   <p className="text-gray-600 text-sm mb-2">{pub.journal} • {pub.year}</p>
                   {pub.link !== "#" && (

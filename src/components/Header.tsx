@@ -19,7 +19,6 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <h1 className="text-xl font-bold text-gray-900">Chiara Sava</h1>
-            <p className="text-sm text-gray-600">Mathematics Department</p>
           </div>
 
           {/* Desktop Navigation */}
@@ -34,7 +33,7 @@ const Header = () => {
               onClick={() => scrollToSection('talks')}
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
             >
-              Public Talks
+              Talks
             </button>
             <button 
               onClick={() => scrollToSection('links')}

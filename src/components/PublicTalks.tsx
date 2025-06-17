@@ -222,27 +222,39 @@ const pastTalks = [
     </div>
   );
 
+  const renderPastTalkCard = (talk: any, index: number) => (
+    <div key={index} className="rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
+      <h3 className="text-l font-semibold text-card-foreground mb-3">{talk.title}</h3>
+      <p className="text-sm text-muted-foreground mb-4">{talk.description}</p>
+      
+      <div className="space-y-2 text-xs text-muted-foreground">
+        <div className="flex items-center space-x-2">
+          <Calendar size={16} className="text-primary" />
+          <span>{talk.date}</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <MapPin size={16} className="text-primary" />
+          <span>{talk.location}</span>
+        </div>
+      </div>
+      
+      <div className="mt-4 ">
+        <span className="text-xs font-medium text-primary">{talk.event}</span>
+      </div>
+      <a
+          href={talk.link}
+          className="text-xs inline-flex items-center text-orange-600 hover:text-blue-800 text-sm"
+          >
+          See more
+          <ExternalLink size={14} className="ml-1" />
+        </a>
+    </div>
+  );
+
   return (
-    <section id="talks" className="relative py-16 bg-orange-100 overflow-hidden">
+    <section id="talks" className="bg-gradient-to-b from-orange-100 from-80% to-yellow-100 to-90% relative py-16 overflow-hidden">
       {/* Animated Wave Background */}
       <div className="absolute inset-0">
-        <svg className="absolute w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="none">
-          <path 
-            d={`M0,400 Q300,${350 + Math.sin(scrollY * 0.01) * 30} 600,380 T1200,400 V800 H0 V400 Z`}
-            fill="rgba(59, 130, 246, 0.05)"
-            style={{ transform: `translateX(${scrollY * -0.1}px)` }}
-          />
-          <path 
-            d={`M0,450 Q300,${420 + Math.cos(scrollY * 0.015) * 25} 600,440 T1200,450 V800 H0 V450 Z`}
-            fill="rgba(99, 102, 241, 0.03)"
-            style={{ transform: `translateX(${scrollY * 0.08}px)` }}
-          />
-          <path 
-            d={`M0,500 Q300,${480 + Math.sin(scrollY * 0.008) * 20} 600,490 T1200,500 V800 H0 V500 Z`}
-            fill="rgba(139, 92, 246, 0.02)"
-            style={{ transform: `translateX(${scrollY * -0.05}px)` }}
-          />
-        </svg>
         
         {/* Floating Elements */}
         <div 
@@ -266,7 +278,7 @@ const pastTalks = [
 
         {/* Upcoming Talks */}
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-foreground mb-6">Upcoming Talks</h3>
+          <h3 className="text-2xl font-semibold text-foreground mb-6">Talks</h3>
           <div className="grid gap-6 md:grid-cols-2">
             {upcomingTalks.map((talk, index) => renderTalkCard(talk, index))}
           </div>
@@ -288,7 +300,7 @@ const pastTalks = [
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-6">Past Talks</h3>
             <div className="grid gap-6 md:grid-cols-2">
-              {pastTalks.map((talk, index) => renderTalkCard(talk, index))}
+              {pastTalks.map((talk, index) => renderPastTalkCard(talk, index))}
             </div>
           </div>
         )}

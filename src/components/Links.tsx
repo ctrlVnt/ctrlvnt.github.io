@@ -17,7 +17,7 @@ const Links = () => {
   ];
 
   return (
-    <section id="links" className="relative py-16 bg-yellow-100 overflow-hidden">
+    <section id="links" className="bg-gradient-to-b from-yellow-100 from-80% to-green-100 to-90% relative py-16 bg-yellow-100 overflow-hidden">
       {/* Animated Network/Link Background */}
       <div className="absolute inset-0">
         {/* Connecting Lines */}
