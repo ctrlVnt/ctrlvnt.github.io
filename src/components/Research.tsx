@@ -32,7 +32,7 @@ const Research = () => {
   ];
 
   return (
-    <section id="research" className="bg-gradient-to-b from-red-100 from-80% to-orange-100 to-90% relative py-16 bg-S overflow-hidden">
+    <section id="research" className="bg-red-100 relative pb-16 bg-S overflow-hidden">
       {/* Animated Mathematical Symbols Background */}
       <div className="absolute inset-0">
         <div 

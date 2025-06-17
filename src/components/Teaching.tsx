@@ -27,7 +27,7 @@ const Teaching = () => {
   ];
 
   return (
-    <section id="teaching" className="bg-gradient-to-b from-green-100 from-80% to-blue-100 to-90% relative py-16 bg-green-100 overflow-hidden">
+    <section id="teaching" className="bg-green-100 relative py-16 bg-green-100 overflow-hidden">
       {/* Animated Educational Background */}
       <div className="absolute inset-0">
         {/* Floating Books */}

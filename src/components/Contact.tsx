@@ -11,7 +11,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section id="contact" className="relative py-16 bg-blue-100 overflow-hidden">
+    <section id="contact" className="bg-blue-100 relative py-16 overflow-hidden">
       {/* Animated Communication Background */}
       <div className="absolute inset-0">
         {/* Signal Waves */}

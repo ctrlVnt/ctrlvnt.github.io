@@ -252,7 +252,7 @@ const pastTalks = [
   );
 
   return (
-    <section id="talks" className="bg-gradient-to-b from-orange-100 from-80% to-yellow-100 to-90% relative py-16 overflow-hidden">
+    <section id="talks" className="bg-orange-100 relative py-16 overflow-hidden">
       {/* Animated Wave Background */}
       <div className="absolute inset-0">
         
