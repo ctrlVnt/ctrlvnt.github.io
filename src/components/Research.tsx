@@ -29,6 +29,12 @@ const Research = () => {
       year: "",
       link: "#"
     },
+    {
+      title: "Differential graded algebras in differential categories",
+      journal: "J.S. Pacaud Lemay, C.Sava, work in progress",
+      year: "",
+      link: "#"
+    },
   ];
 
   return (
