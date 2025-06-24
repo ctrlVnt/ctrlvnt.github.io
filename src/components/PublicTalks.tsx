@@ -13,6 +13,19 @@ const PublicTalks = () => {
 
   const upcomingTalks = [
   {
+    title: "Enhancements of quivers with relations",
+    event: "International Cateogry Theory Conference CT2025",
+    date: "Mon Jul 14 2025",
+    location: "Masaryk University, Brno ",
+    audience: "Researchers & Academics",
+    description: "Monday 14 July 2025, Masaryk University",
+    link: "https://conference.math.muni.cz/ct2025/"
+  }
+];
+
+const pastTalks = [
+
+{
     title: "∞-Dold-Kan correspondence via representation theory",
     event: "Seminario di Algebra e Teoria dei numeri",
     date: "Thu Jun 19 2025",
@@ -20,10 +33,7 @@ const PublicTalks = () => {
     audience: "Researchers & Academics",
     description: "Thursday 19 June 2025, University of Turin",
     link: "https://www.seminarioatn.unito.it/"
-  }
-];
-
-const pastTalks = [
+  },
   {
     title: "Differential graded algebras in differential categories",
     event: "Australian Category Seminar",
