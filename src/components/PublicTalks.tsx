@@ -202,7 +202,6 @@ const pastTalks = [
   const renderTalkCard = (talk: any, index: number) => (
     <div key={index} className="bg-card rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
       <h3 className="text-xl font-semibold text-card-foreground mb-3">{talk.title}</h3>
-      <p className="text-muted-foreground mb-4">{talk.description}</p>
       
       <div className="space-y-2 text-sm text-muted-foreground">
         <div className="flex items-center space-x-2">
@@ -212,10 +211,6 @@ const pastTalks = [
         <div className="flex items-center space-x-2">
           <MapPin size={16} className="text-primary" />
           <span>{talk.location}</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Users size={16} className="text-primary" />
-          <span>{talk.audience}</span>
         </div>
       </div>
       
@@ -235,7 +230,6 @@ const pastTalks = [
   const renderPastTalkCard = (talk: any, index: number) => (
     <div key={index} className="rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
       <h3 className="text-l font-semibold text-card-foreground mb-3">{talk.title}</h3>
-      <p className="text-sm text-muted-foreground mb-4">{talk.description}</p>
       
       <div className="space-y-2 text-xs text-muted-foreground">
         <div className="flex items-center space-x-2">
@@ -288,7 +282,7 @@ const pastTalks = [
 
         {/* Upcoming Talks */}
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-foreground mb-6">Talks</h3>
+          <h3 className="text-2xl font-semibold text-foreground mb-6">Upcoming Talks</h3>
           <div className="grid gap-6 md:grid-cols-2">
             {upcomingTalks.map((talk, index) => renderTalkCard(talk, index))}
           </div>

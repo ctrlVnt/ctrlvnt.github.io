@@ -89,6 +89,7 @@ const Research = () => {
                 <div key={index} className="bg-card border border-red-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                   <h4 className="font-medium text-gray-900 mb-2">{pub.title}</h4>
                   <p className="text-gray-600 text-sm mb-2">{pub.journal} • {pub.year}</p>
+
                   {pub.link !== "#" && (
                     <a
                       href={pub.link}
@@ -97,6 +98,12 @@ const Research = () => {
                       View Publication
                       <ExternalLink size={14} className="ml-1" />
                     </a>
+                  )}
+
+                  {pub.link === "#" && (
+                    <p className="inline-flex items-center text-gray-400 hover:text-gray-800 text-sm">
+                      Ongoing works... 🚧
+                    </p>
                   )}
                 </div>
               ))}
