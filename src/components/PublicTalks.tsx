@@ -12,7 +12,11 @@ const PublicTalks = () => {
   }, []);
 
   const upcomingTalks = [
-  {
+ 
+];
+
+const pastTalks = [
+   {
     title: "Enhancements of quivers with relations",
     event: "International Cateogry Theory Conference CT2025",
     date: "Mon Jul 14 2025",
@@ -20,10 +24,7 @@ const PublicTalks = () => {
     audience: "Researchers & Academics",
     description: "Monday 14 July 2025, Masaryk University",
     link: "https://conference.math.muni.cz/ct2025/"
-  }
-];
-
-const pastTalks = [
+  },
 
 {
     title: "∞-Dold-Kan correspondence via representation theory",
