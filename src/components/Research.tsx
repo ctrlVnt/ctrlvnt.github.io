@@ -26,8 +26,8 @@ const Research = () => {
     {
       title: "The derivator associated to a dg-category",
       journal: "F.Genovese, C.Sava, work in progress",
-      year: "",
-      link: "#"
+      year: "2025",
+      link: "https://arxiv.org/abs/2508.02612"
     },
     {
       title: "Differential graded algebras in differential categories",
