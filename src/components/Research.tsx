@@ -21,7 +21,7 @@ const Research = () => {
       title: "∞-Dold-Kan correspondence via representation theory",
       journal: "C. Sava, arXiv preprint",
       year: "2022",
-      link: "https://arxiv.org/pdf/2211.00762v3"
+      link: "https://arxiv.org/abs/2211.00762v3"
     },
     {
       title: "The derivator of a dg-category",
