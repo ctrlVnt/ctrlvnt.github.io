@@ -25,7 +25,7 @@ const Research = () => {
     },
     {
       title: "The derivator associated to a dg-category",
-      journal: "F.Genovese, C.Sava, work in progress",
+      journal: "F.Genovese, C.Sava, J.Šťovíček, arXiv preprint",
       year: "2025",
       link: "https://arxiv.org/abs/2508.02612"
     },
