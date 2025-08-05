@@ -13,29 +13,25 @@ const Research = () => {
   const publications = [
     {
       title: "Equivalent definitions of the preprojective algebra",
-      author: "C. Sava",
-      journal: "arXiv preprint",
+      journal: "C. Sava, arXiv preprint",
       year: "2022",
       link: "https://arxiv.org/abs/2203.00792"
     },
     {
       title: "∞-Dold-Kan correspondence via representation theory",
-      author: "C. Sava",
-      journal: "arXiv preprint",
+      journal: "C. Sava, arXiv preprint",
       year: "2022",
       link: "https://arxiv.org/abs/2211.00762"
     },
     {
       title: "The derivator of a dg-category",
-      author: "F.Genovese, C.Sava, J.Šťovíček",
-      journal: "arXiv preprint",
+      journal: "F. Genovese, C. Sava, J. Šťovíček, arXiv preprint",
       year: "2025",
       link: "https://arxiv.org/abs/2508.02612"
     },
     {
       title: "Differential graded algebras in differential categories",
-      author: "J.S. Pacaud Lemay, C.Sava",
-      journal: "work in progress",
+      journal: "J.S. Pacaud Lemay, C. Sava, work in progress",
       year: "",
       link: "#"
     },
