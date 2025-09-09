@@ -1,6 +1,7 @@
 import { link } from 'fs';
 import { BookOpen, Users, Award, Download, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion'; 
 
 const Teaching = () => {
   const [showPast, setShowPast] = useState(false);
@@ -122,32 +123,39 @@ const Teaching = () => {
         </div>
 
         {/* Past Courses */}
-        {showPast && (
-          <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Past Courses</h3>
-            <div className="grid gap-6 md:grid-cols-2">
-             {pastCourses.map((course, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-md p-6">
-                  <div className="flex justify-between items-start mb-3">
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900">{course.code}: {course.title}</h4>
-                      <p className="text-gray-600">{course.semester}</p>
-                      <p className="text-gray-700">{course.description}</p>
-                    </div>
-                  </div>
-                  <a
-                      href={course.link}
-                      className="inline-flex items-center text-green-600 hover:text-green-800 text-sm"
+        <AnimatePresence initial={false}>
+          {showPast && (
+                    <motion.div
+                      key="past-talks"
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.4, ease: 'easeInOut' }}
                     >
-                      See more
-                      <ExternalLink size={14} className="ml-1" />
-                    </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
+                      <h3 className="text-2xl font-semibold text-foreground mb-6">Past Courses</h3>
+                      <div className="grid gap-6 md:grid-cols-2">
+                      {pastCourses.map((course, index) => (
+                          <div key={index} className="bg-white rounded-lg shadow-md p-6">
+                            <div className="flex justify-between items-start mb-3">
+                              <div>
+                                <h4 className="text-lg font-semibold text-gray-900">{course.code}: {course.title}</h4>
+                                <p className="text-gray-600">{course.semester}</p>
+                                <p className="text-gray-700">{course.description}</p>
+                              </div>
+                            </div>
+                            <a
+                                href={course.link}
+                                className="inline-flex items-center text-green-600 hover:text-green-800 text-sm"
+                              >
+                                See more
+                                <ExternalLink size={14} className="ml-1" />
+                              </a>
+                          </div>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+        </AnimatePresence>
       </div>
     </section>
   );

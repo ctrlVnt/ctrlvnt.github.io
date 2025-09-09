@@ -1,5 +1,6 @@
 import { Calendar, MapPin, Users, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion'; 
 
 const PublicTalks = () => {
   const [showPastTalks, setShowPastTalks] = useState(false);
@@ -301,15 +302,22 @@ const pastTalks = [
         </div>
 
         {/* Past Talks */}
-        {showPastTalks && (
-          <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Past Talks</h3>
-            <div className="grid gap-6 md:grid-cols-2">
-              {pastTalks.map((talk, index) => renderPastTalkCard(talk, index))}
-            </div>
-          </div>
-        )}
-
+        <AnimatePresence initial={false}>
+          {showPastTalks && (
+            <motion.div
+              key="past-talks"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
+            >
+              <h3 className="text-2xl font-semibold text-foreground mb-6">Past Talks</h3>
+              <div className="grid gap-6 md:grid-cols-2">
+                {pastTalks.map((talk, index) => renderPastTalkCard(talk, index))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );
