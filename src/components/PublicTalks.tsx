@@ -12,7 +12,15 @@ const PublicTalks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const upcomingTalks = [
+  const upcomingTalks = [ {
+    title: "Differential graded algebras in differential categories",
+    event: "Topology and Geometry Seminar (Texas, Kansas)",
+    date: "Tue Sept 30 2025",
+    location: "Online Seminar",
+    audience: "Researchers & Academics",
+    description: "Tuesday 30 September 2025, online",
+    link: "https://researchseminars.org/seminar/tandg"
+  }
  
 ];
 
