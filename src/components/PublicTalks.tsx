@@ -12,7 +12,12 @@ const PublicTalks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const upcomingTalks = [ {
+  const upcomingTalks = [
+ 
+];
+
+const pastTalks = [
+  {
     title: "Differential graded algebras in differential categories",
     event: "Topology and Geometry Seminar (Texas, Kansas)",
     date: "Tue Sept 30 2025",
@@ -20,11 +25,7 @@ const PublicTalks = () => {
     audience: "Researchers & Academics",
     description: "Tuesday 30 September 2025, online",
     link: "https://researchseminars.org/seminar/tandg"
-  }
- 
-];
-
-const pastTalks = [
+  },
    {
     title: "Enhancements of quivers with relations",
     event: "International Cateogry Theory Conference CT2025",
