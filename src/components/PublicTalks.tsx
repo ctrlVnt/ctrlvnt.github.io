@@ -16,7 +16,7 @@ const PublicTalks = () => {
     title: "Differential graded algebras in differential categories",
     event: "Algebra Seminar",
     date: "Mon Dec 1 2025",
-    location: "Charles Universiy, Prague",
+    location: "Charles University, Prague",
     audience: "Researchers & Academics",
     description: "Monday 1 December 2025, Charles University",
     link: "https://www.mff.cuni.cz/en/math/ka/events/seminars/algebra-seminar"
