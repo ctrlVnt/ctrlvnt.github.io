@@ -29,22 +29,23 @@ const Hero = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
   <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-8">
-    
-    <div className="flex justify-center lg:justify-end lg:flex-shrink-0">
+
+    <div className="flex flex-col justify-center lg:justify-end lg:flex-shrink-0">
       <img
-        src="profile.jpg"
-        alt="CS"
+        src="profile_entire.jpg"
+        alt="profile.jpg"
         className="
-          w-32 h-32 
-          lg:w-72 lg:h-72
+          w-64 lg:w-80
           mx-auto mb-8 lg:mb-0 
-          rounded-full lg:rounded-2xl
+          rounded-2xl
           object-cover
           shadow-lg
-          transition-transform duration-300 hover:scale-105
+          mb-0
         "
       />
+      <p className='text-s opacity-50 lg:mt-3'>picture by Nicola Carissimi</p>
     </div>
 
 
