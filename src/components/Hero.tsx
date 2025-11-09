@@ -13,7 +13,6 @@ const Hero = () => {
 
   return (
     <section className="relative bg-gradient-to-b from-sky-100 from-10% via-cyan-100 via-80% to-red-100 to-90% pt-24 pb-32 overflow-hidden">
-      {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div 
           className="absolute -top-1/2 -left-1/4 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl"
@@ -30,33 +29,63 @@ const Hero = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <img
-            src="profile.jpg"
-            alt="CS"
-            className="w-32 h-32 mx-auto mb-8 rounded-full flex items-center justify-center text-white text-4xl font-bold"
-          />
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Chiara Sava
-          </h1>
-          <p className="text-xl text-gray-700 mb-6">
-            Ph.D. mathematics student
-          </p>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            I am a Ph.D. student at Charles University in Prague and 
-            I work under the supervision of <a className="text-cyan-600" href="https://www.karlin.mff.cuni.cz/~stovicek/index.php/en/homepage" target="_blank">Jan Šťovíček</a>.
-            My research is mainly about homotopy theory, higher category theory and representation theory of algebras.
-          </p>
-          <div className="flex flex-row gap-4 justify-center">
-            <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-cyan-600 text-white w-12 h-12 rounded-full hover:bg-blue-700 transition-colors duration-200 font-medium flex items-center justify-center"
-            >
-              <Mail size={20} />
-            </button>
-          </div>
-        </div>
+  <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-8">
+    
+    <div className="flex justify-center lg:justify-end lg:flex-shrink-0">
+      <img
+        src="profile.jpg"
+        alt="CS"
+        className="
+          w-32 h-32 
+          lg:w-72 lg:h-72
+          mx-auto mb-8 lg:mb-0 
+          rounded-full lg:rounded-2xl
+          object-cover
+          shadow-lg
+          transition-transform duration-300 hover:scale-105
+        "
+      />
+    </div>
+
+
+    <div className="flex-1">
+      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Chiara Sava
+      </h1>
+      <p className="text-xl text-gray-700 mb-6">
+        Ph.D. mathematics student
+      </p>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto lg:mx-0 mb-8">
+        I am a Ph.D. student at Charles University in Prague and 
+        I work under the supervision of{" "}
+        <a
+          className="text-cyan-600"
+          href="https://www.karlin.mff.cuni.cz/~stovicek/index.php/en/homepage"
+          target="_blank"
+        >
+          Jan Šťovíček
+        </a>.
+        My research is mainly about homotopy theory, higher category theory and
+        representation theory of algebras.
+      </p>
+
+      <div className="flex flex-row gap-4 justify-center lg:justify-start">
+        <button
+          onClick={() =>
+            document
+              .getElementById("contact")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="bg-cyan-600 text-white w-12 h-12 rounded-full hover:bg-blue-700 transition-colors duration-200 font-medium flex items-center justify-center"
+        >
+          <Mail size={20} />
+        </button>
       </div>
+    </div>
+    
+  </div>
+</div>
+
     </section>
   );
 };
