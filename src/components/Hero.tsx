@@ -38,14 +38,14 @@ const Hero = () => {
         alt="profile.jpg"
         className="
           w-64 lg:w-80
-          mx-auto mb-8 lg:mb-0 
-          rounded-2xl
+          mx-auto lg:mb-0 
+          rounded-3xl
           object-cover
           shadow-lg
           mb-0
         "
       />
-      <p className='text-s opacity-50 lg:mt-3'>picture by Nicola Carissimi</p>
+      <p className='text-s opacity-50 mt-3'>picture by Nicola Carissimi</p>
     </div>
 
 
