@@ -68,6 +68,8 @@ const Hero = () => {
         >
           Jan Šťovíček
         </a>.
+
+        
         My research is mainly about homotopy theory, higher category theory and
         representation theory of algebras.
       </p>
