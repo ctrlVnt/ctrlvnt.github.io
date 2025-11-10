@@ -37,8 +37,8 @@ const Hero = () => {
         src="profile_entire.jpg"
         alt="profile.jpg"
         className="
-          w-64 lg:w-80
-          h-64 lg:h-full
+          w-52 lg:w-80
+          h-52 lg:h-full
           rounded-full
           mx-auto lg:mb-0 
           lg:rounded-3xl
