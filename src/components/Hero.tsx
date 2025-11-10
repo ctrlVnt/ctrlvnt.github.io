@@ -58,7 +58,7 @@ const Hero = () => {
       <p className="text-xl text-gray-700 mb-6">
         Ph.D. mathematics student
       </p>
-      <p className="text-lg text-gray-600 max-w-3xl mx-auto lg:mx-0 mb-8">
+      <p className="text-lg text-gray-600 max-w-md mx-auto lg:mx-0 mb-8">
         I am a Ph.D. student at Charles University in Prague and 
         I work under the supervision of{" "}
         <a
@@ -72,7 +72,7 @@ const Hero = () => {
         representation theory of algebras.
       </p>
 
-      <div className="flex flex-row gap-4 justify-center lg:justify-start">
+      <div className="flex flex-row justify-center lg:justify-start">
         <button
           onClick={() =>
             document
