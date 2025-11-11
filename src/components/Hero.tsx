@@ -7,7 +7,9 @@ const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
   const sectionRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
-  const textRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const textRef = useRef<HTMLParagraphElement>(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
   const bgCirclesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -18,10 +20,11 @@ const Hero = () => {
 
     if (window.innerWidth >= 1024) {
       tl.from(imageRef.current, { x: -100, opacity: 0, duration: 1 }, "-=0.8")
-        .from(textRef.current, { x: 100, opacity: 0, duration: 1 }, "-=0.8");
+        .from([textRef.current, buttonRef.current], { x: 100, opacity: 0, duration: 1 }, "-=0.8")
+        .from(titleRef.current, {y: -30, opacity: 0, duration: 1}, "-=0.8");
     } else {
       tl.from(imageRef.current, { y: 50, opacity: 0, duration: 1 }, "-=0.8")
-        .from(textRef.current, { y: 30, opacity: 0, duration: 1 }, "-=0.6");
+        .from([textRef.current, buttonRef.current, titleRef.current], { y: 30, opacity: 0, duration: 1 }, "-=0.6");
     }
 
     tl.from(bgCirclesRef.current?.children, {
@@ -77,12 +80,12 @@ const Hero = () => {
     </div>
 
 
-    <div ref={textRef} className="flex-1">
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+    <div className="flex-1">
+      <h1 ref={titleRef} className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
         Chiara Sava
       </h1>
       
-      <p className="text-lg text-gray-600 max-w-md mx-auto lg:mx-0 mb-8">
+      <p ref={textRef} className="text-lg text-gray-600 max-w-md mx-auto lg:mx-0 mb-8">
         I am a Ph.D. student at Charles University in Prague and 
         I work under the supervision of{" "}
         <a
@@ -100,7 +103,7 @@ const Hero = () => {
         representation theory of algebras.
       </p>
 
-      <div className="flex flex-row justify-center lg:justify-start">
+      <div ref={buttonRef} className="flex flex-row justify-center lg:justify-start">
         <button
           onClick={() =>
             document
