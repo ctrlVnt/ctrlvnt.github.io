@@ -4,10 +4,40 @@ import { useEffect, useState, useRef } from 'react';
 import { gsap } from "gsap";
 
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const bgCirclesRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+      tl.from(sectionRef.current, { opacity: 0, duration: 1.2 })
+        .from(imageRef.current, { y: 50, opacity: 0, duration: 1 }, "-=0.8")
+        .from(textRef.current, { y: 30, opacity: 0, duration: 1 }, "-=0.6")
+        .from(bgCirclesRef.current?.children, {
+          scale: 0.6,
+          opacity: 0,
+          stagger: 0.2,
+          duration: 1,
+          ease: "back.out(1.7)",
+        }, "-=1");
+    }, sectionRef);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      ctx.revert();
+    };
+  }, []);
 
   return (
     <section className="relative bg-gradient-to-b from-sky-100 from-10% via-cyan-100 via-80% to-red-100 to-90% pt-24 pb-32 overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
+      <div ref={bgCirclesRef} className="absolute inset-0 overflow-hidden">
         <div 
           className="absolute -top-1/2 -left-1/4 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl"
           style={{ transform: `translateY(${scrollY * 0.3}px) rotate(${scrollY * 0.1}deg)` }}
@@ -26,7 +56,7 @@ const Hero = () => {
         
   <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-8">
 
-    <div className="flex flex-col justify-center lg:justify-end lg:flex-shrink-0">
+    <div ref={imageRef} className="flex flex-col justify-center lg:justify-end lg:flex-shrink-0">
       <img
         src="profile_entire.jpg"
         alt="profile.jpg"
@@ -45,7 +75,7 @@ const Hero = () => {
     </div>
 
 
-    <div className="flex-1">
+    <div ref={textRef} className="flex-1">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
         Chiara Sava
       </h1>

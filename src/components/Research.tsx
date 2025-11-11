@@ -1,13 +1,33 @@
-import { Book, ExternalLink } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { ExternalLink } from 'lucide-react';
+import { useEffect, useState, useRef } from 'react';
+import { gsap } from "gsap";
 
 const Research = () => {
   const [scrollY, setScrollY] = useState(0);
-
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const publicationsRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const tl = gsap.timeline({ delay: 1.2 });
+    tl.from(titleRef.current, {
+      y: 30,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    }).from(publicationsRef.current?.children, {
+      y: 20,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 0.8,
+      ease: "power3.out",
+    }, "-=0.5");
   }, []);
 
   const publications = [
@@ -38,7 +58,7 @@ const Research = () => {
   ];
 
   return (
-    <section id="research" className="bg-red-100 relative pb-16 bg-S overflow-hidden">
+    <section ref={sectionRef} id="research" className="bg-red-100 relative pb-16 bg-S overflow-hidden">
       {/* Animated Mathematical Symbols Background */}
       <div className="absolute inset-0">
         <div 
@@ -77,12 +97,12 @@ const Research = () => {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Research</h2>
+          <h2 ref={titleRef} className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Research</h2>
         </div>
 
   
           {/* Recent Publications */}
-          <div>
+          <div ref={publicationsRef}>
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">Publications</h3>
             <div className="space-y-4">
               {publications.map((pub, index) => (
