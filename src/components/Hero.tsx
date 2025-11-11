@@ -55,9 +55,8 @@ const Hero = () => {
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
         Chiara Sava
       </h1>
-      <p className="text-xl text-gray-700 mb-6">
-        Ph.D. mathematics student
-      </p>
+      <br>
+        <br>
       <p className="text-lg text-gray-600 max-w-md mx-auto lg:mx-0 mb-8">
         I am a Ph.D. student at Charles University in Prague and 
         I work under the supervision of{" "}
@@ -69,6 +68,8 @@ const Hero = () => {
           Jan Šťovíček
         </a>.
 </p>
+      <br>
+        <br>
         <p 
         My research is mainly about homotopy theory, higher category theory and
         representation theory of algebras.
