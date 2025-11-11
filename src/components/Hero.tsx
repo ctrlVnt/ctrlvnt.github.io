@@ -1,15 +1,9 @@
 
-import { Mail, Smile } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { Mail } from 'lucide-react';
+import { useEffect, useState, useRef } from 'react';
+import { gsap } from "gsap";
 
 const Hero = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <section className="relative bg-gradient-to-b from-sky-100 from-10% via-cyan-100 via-80% to-red-100 to-90% pt-24 pb-32 overflow-hidden">
