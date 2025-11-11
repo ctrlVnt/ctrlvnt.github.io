@@ -11,29 +11,31 @@ const Hero = () => {
   const bgCirclesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
+  const ctx = gsap.context(() => {
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+    tl.from(sectionRef.current, { opacity: 0, duration: 1.2 });
 
-      tl.from(sectionRef.current, { opacity: 0, duration: 1.2 })
-        .from(imageRef.current, { y: 50, opacity: 0, duration: 1 }, "-=0.8")
-        .from(textRef.current, { y: 30, opacity: 0, duration: 1 }, "-=0.6")
-        .from(bgCirclesRef.current?.children, {
-          scale: 0.6,
-          opacity: 0,
-          stagger: 0.2,
-          duration: 1,
-          ease: "back.out(1.7)",
-        }, "-=1");
-    }, sectionRef);
+    if (window.innerWidth >= 1024) {
+      tl.from(imageRef.current, { x: -100, opacity: 0, duration: 1 }, "-=0.8")
+        .from(textRef.current, { x: 100, opacity: 0, duration: 1 }, "-=0.8");
+    } else {
+      tl.from(imageRef.current, { y: 50, opacity: 0, duration: 1 }, "-=0.8")
+        .from(textRef.current, { y: 30, opacity: 0, duration: 1 }, "-=0.6");
+    }
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      ctx.revert();
-    };
-  }, []);
+    tl.from(bgCirclesRef.current?.children, {
+      scale: 0.6,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      ease: "back.out(1.7)",
+    }, "-=1");
+  }, sectionRef);
+
+  return () => ctx.revert();
+}, []);
+
 
   return (
     <section className="relative bg-gradient-to-b from-sky-100 from-10% via-cyan-100 via-80% to-red-100 to-90% pt-24 pb-32 overflow-hidden">
