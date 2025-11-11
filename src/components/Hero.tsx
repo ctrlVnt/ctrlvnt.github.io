@@ -47,7 +47,7 @@ const Hero = () => {
           mb-0
         "
       />
-      <p className='text-s opacity-50 mt-3'>picture by Nicola Carissimi</p>
+      <p className='text-s opacity-50 mt-3'>Picture by Nicola Carissimi</p>
     </div>
 
 
