@@ -12,7 +12,11 @@ const PublicTalks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const upcomingTalks = [ {
+  const upcomingTalks = [ 
+ 
+];
+
+const pastTalks = [ {
     title: "Differential graded algebras in differential categories",
     event: "Algebra Seminar",
     date: "Mon Dec 1 2025",
@@ -20,12 +24,9 @@ const PublicTalks = () => {
     audience: "Researchers & Academics",
     description: "Monday 1 December 2025, Charles University",
     link: "https://www.mff.cuni.cz/en/math/ka/events/seminars/algebra-seminar"
-  }
- 
-];
+  },
 
-const pastTalks = [
-  {
+ {
     title: "Differential graded algebras in differential categories",
     event: "Topology and Geometry Seminar (Texas, Kansas)",
     date: "Tue Sept 30 2025",
