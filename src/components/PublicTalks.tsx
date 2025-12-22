@@ -14,7 +14,7 @@ const PublicTalks = () => {
 
   const upcomingTalks = [ {
     title: "∞-Dold-Kan correspondence via representation theory",
-    event: "ItaCa workshop 2025, Poster: Link to the GAME below.",
+    event: "ItaCa workshop 2025, Poster link to the GAME:",
     date: "Mon Dec 22 2025",
     location: "University of Milan",
     audience: "Researchers & Academics",
