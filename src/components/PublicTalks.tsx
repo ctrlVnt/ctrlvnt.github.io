@@ -12,7 +12,15 @@ const PublicTalks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const upcomingTalks = [ 
+  const upcomingTalks = [ {
+    title: "∞-Dold-Kan correspondence via representation theory",
+    event: "ItaCa workshop 2025, Poster: Link to the GAME below.",
+    date: "Mon Dec 22 2025",
+    location: "University of Milan",
+    audience: "Researchers & Academics",
+    description: "Monday 22 June 2025, University of Milan",
+    link: "https://drive.google.com/file/d/10PaOIRe1loKw50KJkzm1jDILP_RayCvK/view?usp=drive_link"
+  }
  
 ];
 
