@@ -49,6 +49,12 @@ const Research = () => {
       year: "2025",
       link: "https://arxiv.org/abs/2508.02612"
     },
+     {
+      title: "Derivations as Algebras",
+      journal: "J.S. Pacaud Lemay, C. Sava",
+      year: "2026",
+      link: "https://arxiv.org/abs/2602.16381"
+    },
     {
       title: "Differential graded algebras in differential categories",
       journal: "J.S. Pacaud Lemay, C. Sava, work in progress",
