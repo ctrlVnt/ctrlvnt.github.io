@@ -39,7 +39,7 @@ const Research = () => {
     },
     {
       title: "∞-Dold-Kan correspondence via representation theory",
-      journal: "C. Sava, arXiv preprint",
+      journal: "C. Sava, arXiv preprint. Accepted for publication in Algebras and Representation Theory.",
       year: "2022",
       link: "https://arxiv.org/abs/2211.00762v3"
     },
