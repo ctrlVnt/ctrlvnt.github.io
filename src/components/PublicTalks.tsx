@@ -12,7 +12,15 @@ const PublicTalks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const upcomingTalks = [
+  const upcomingTalks = [ {
+    title: "Homotopy-theoretic methods in representation theory",
+    event: "Introductory seminar",
+    date: "Fri 28 Apr 20026",
+    location: "University of Luxembourg",
+    audience: "Researchers & Academics",
+    description: "Friday 28 April 2026, University of Luxembourg",
+    link: "https://giannipetrella.eu/introductory-seminar/"
+  }
  
 ];
 
