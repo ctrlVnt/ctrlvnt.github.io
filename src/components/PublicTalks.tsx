@@ -15,10 +15,10 @@ const PublicTalks = () => {
   const upcomingTalks = [ {
     title: "Homotopy-theoretic methods in representation theory",
     event: "Introductory seminar",
-    date: "Fri 28 Apr 20026",
+    date: "Tue 28 Apr 20026",
     location: "University of Luxembourg",
     audience: "Researchers & Academics",
-    description: "Friday 28 April 2026, University of Luxembourg",
+    description: "Tuesday 28 April 2026, University of Luxembourg",
     link: "https://giannipetrella.eu/introductory-seminar/"
   }
  
