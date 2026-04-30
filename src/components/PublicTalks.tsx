@@ -12,19 +12,21 @@ const PublicTalks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const upcomingTalks = [ {
-    title: "Homotopy-theoretic methods in representation theory",
-    event: "Introductory seminar",
-    date: "Tue 28 Apr 20026",
-    location: "University of Luxembourg",
-    audience: "Researchers & Academics",
-    description: "Tuesday 28 April 2026, University of Luxembourg",
-    link: "https://giannipetrella.eu/introductory-seminar/"
-  }
+  const upcomingTalks = [ 
  
 ];
 
 const pastTalks = [ {
+    title: "Homotopy-theoretic methods in representation theory",
+    event: "Introductory seminar",
+    date: "Tue 28 Apr 2026",
+    location: "University of Luxembourg",
+    audience: "Researchers & Academics",
+    description: "Tuesday 28 April 2026, University of Luxembourg",
+    link: "https://giannipetrella.eu/introductory-seminar/"
+  },
+  
+   {
     title: "Differential graded algebras in differential categories",
     event: "Algebra Seminar",
     date: "Mon Dec 1 2025",
