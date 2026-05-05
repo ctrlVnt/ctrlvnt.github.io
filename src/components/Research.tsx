@@ -45,13 +45,13 @@ const Research = () => {
     },
     {
       title: "The derivator of a dg-category",
-      journal: "F. Genovese, C. Sava, J. Šťovíček, arXiv preprint",
+      journal: "F. Genovese, C. Sava with an appendix by J. Šťovíček, arXiv preprint",
       year: "(2025)",
       link: "https://arxiv.org/abs/2508.02612"
     },
      {
       title: "Derivations as Algebras",
-      journal: "J.S. Pacaud Lemay, C. Sava",
+      journal: "J.S. Pacaud Lemay, C. Sava, arXiv preprint",
       year: "(2026)",
       link: "https://arxiv.org/abs/2602.16381"
     },
