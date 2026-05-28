@@ -13,7 +13,15 @@ const PublicTalks = () => {
   }, []);
 
   const upcomingTalks = [ 
- 
+ {
+    title: "Derivations as Algebras",
+    event: "2026 Algebra Workshop in Prague",
+    date: "Fri May 28 2026",
+    location: "Charles University, Prague",
+    audience: "Researchers & Academics",
+    description: "Friday 28 May 2026, Charles University",
+    link: "https://www.karlin.mff.cuni.cz/~stovicek/index.php/en/algebra-ws-2026"
+  }
 ];
 
 const pastTalks = [ {
