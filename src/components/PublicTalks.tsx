@@ -12,18 +12,20 @@ const PublicTalks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const upcomingTalks = [ {
+  const upcomingTalks = [ 
+ 
+];
+
+const pastTalks = [ {
     title: "The derivator of a pretriangulated dg-category",
     event: "Aglebraic Geometry seminar",
     date: "Thu Jun 11 2026",
     location: "University of Milan",
     audience: "Researchers & Academics",
     description: "Thursday 11 June 2026"
-  }
- 
-];
-
-const pastTalks = [ {
+  }, 
+                   
+  {
     title: "Derivations as Algebras",
     event: "2026 Algebra Workshop in Prague",
     date: "Fri May 28 2026",
