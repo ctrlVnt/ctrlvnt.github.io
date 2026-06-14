@@ -12,8 +12,18 @@ const PublicTalks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const upcomingTalks = [ 
- {
+  const upcomingTalks = [ {
+    title: "The derivator of a pretriangulated dg-category",
+    event: "Aglebraic Geometry seminar",
+    date: "Thu Jun 11 2026",
+    location: "University of Milan",
+    audience: "Researchers & Academics",
+    description: "Thursday 11 June 2026"
+  }
+ 
+];
+
+const pastTalks = [ {
     title: "Derivations as Algebras",
     event: "2026 Algebra Workshop in Prague",
     date: "Fri May 28 2026",
@@ -21,13 +31,13 @@ const PublicTalks = () => {
     audience: "Researchers & Academics",
     description: "Friday 28 May 2026, Charles University",
     link: "https://www.karlin.mff.cuni.cz/~stovicek/index.php/en/algebra-ws-2026"
-  }
-];
-
-const pastTalks = [ {
+  },
+    
+  
+  {
     title: "Homotopy-theoretic methods in representation theory",
     event: "Introductory seminar",
-    date: "Tue 28 Apr 2026",
+    date: "Tue Apr 28 2026",
     location: "University of Luxembourg",
     audience: "Researchers & Academics",
     description: "Tuesday 28 April 2026, University of Luxembourg",
