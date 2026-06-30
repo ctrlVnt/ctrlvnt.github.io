@@ -51,7 +51,7 @@ const Research = () => {
     },
      {
       title: "Derivations as Algebras",
-      journal: "J.S. Pacaud Lemay, C. Sava, arXiv preprint",
+      journal: "J.S. Pacaud Lemay, C. Sava, arXiv preprint (Accepted for publication in the Journal of the London Mathematical Society)",
       year: "(2026)",
       link: "https://arxiv.org/abs/2602.16381"
     },
