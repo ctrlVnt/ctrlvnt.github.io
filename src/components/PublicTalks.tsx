@@ -18,6 +18,16 @@ const PublicTalks = () => {
 
 const pastTalks = [ {
     title: "The derivator of a pretriangulated dg-category",
+    event: "Workshop and International Conference on Representations of algebras, ICRA 2026",
+    date: "Mon Jun 29 2026",
+    location: "Institut Fourier (Grenoble)",
+    audience: "Researchers & Academics",
+    description: "Monday 29 June 2026",
+    link: "https://if-summer-2026.sciencesconf.org/?lang=en"
+  }, 
+  
+   {
+    title: "The derivator of a pretriangulated dg-category",
     event: "Aglebraic Geometry seminar",
     date: "Thu Jun 11 2026",
     location: "University of Milan",
